@@ -1,0 +1,47 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@now/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/users(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/levels(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/hints(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/avatars(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/guests(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/password-reset(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/admin(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/life(.*)",
+        "dest": "server.js"
+      }
+    ]
+  }
